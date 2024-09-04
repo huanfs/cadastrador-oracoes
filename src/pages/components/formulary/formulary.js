@@ -40,7 +40,7 @@ export default function Formulary(){
             path:path,
         }
         try{
-            const SendData = await fetch("https://cadastrador-oracoes.vercel.app/add",{
+            const SendData = await fetch("http://localhost:8080/add",{
                 method:"POST",
                 body:JSON.stringify(data),
                 headers:{
