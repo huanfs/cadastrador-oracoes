@@ -9,8 +9,7 @@ const server = express();
 
 server.use(bodyParser.json());
 server.use(cors({
-    //origin:["http://localhost:3000","https://cadastrador-oracoes.vercel.app/"]
-    origin:["*"]
+    origin:"http://localhost:3000"
 }));
 
 server.get("/", (req, res)=>{
